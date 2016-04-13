@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CDCEBBBF1CBED60600CABB6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCEBBBE1CBED60600CABB6B /* main.m */; };
+		CDCEBBC21CBED60600CABB6B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCEBBC11CBED60600CABB6B /* AppDelegate.m */; };
+		CDCEBBC51CBED60600CABB6B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCEBBC41CBED60600CABB6B /* ViewController.m */; };
+		CDCEBBC81CBED60600CABB6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDCEBBC61CBED60600CABB6B /* Main.storyboard */; };
+		CDCEBBCA1CBED60600CABB6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDCEBBC91CBED60600CABB6B /* Assets.xcassets */; };
+		CDCEBBCD1CBED60600CABB6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDCEBBCB1CBED60600CABB6B /* LaunchScreen.storyboard */; };
+		CDCEBBD81CBED60600CABB6B /* TerritoryAssistantTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCEBBD71CBED60600CABB6B /* TerritoryAssistantTests.m */; };
+		CDCEBBE31CBED60600CABB6B /* TerritoryAssistantUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCEBBE21CBED60600CABB6B /* TerritoryAssistantUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CDCEBBD41CBED60600CABB6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDCEBBB21CBED60600CABB6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDCEBBB91CBED60600CABB6B;
+			remoteInfo = TerritoryAssistant;
+		};
+		CDCEBBDF1CBED60600CABB6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDCEBBB21CBED60600CABB6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDCEBBB91CBED60600CABB6B;
+			remoteInfo = TerritoryAssistant;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CDCEBBBA1CBED60600CABB6B /* TerritoryAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TerritoryAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDCEBBBE1CBED60600CABB6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CDCEBBC01CBED60600CABB6B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CDCEBBC11CBED60600CABB6B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CDCEBBC31CBED60600CABB6B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CDCEBBC41CBED60600CABB6B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CDCEBBC71CBED60600CABB6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CDCEBBC91CBED60600CABB6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CDCEBBCC1CBED60600CABB6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CDCEBBCE1CBED60600CABB6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDCEBBD31CBED60600CABB6B /* TerritoryAssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TerritoryAssistantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDCEBBD71CBED60600CABB6B /* TerritoryAssistantTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TerritoryAssistantTests.m; sourceTree = "<group>"; };
+		CDCEBBD91CBED60600CABB6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDCEBBDE1CBED60600CABB6B /* TerritoryAssistantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TerritoryAssistantUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDCEBBE21CBED60600CABB6B /* TerritoryAssistantUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TerritoryAssistantUITests.m; sourceTree = "<group>"; };
+		CDCEBBE41CBED60600CABB6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDCEBBB71CBED60600CABB6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDCEBBD01CBED60600CABB6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDCEBBDB1CBED60600CABB6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CDCEBBB11CBED60600CABB6B = {
+			isa = PBXGroup;
+			children = (
+				CDCEBBBC1CBED60600CABB6B /* TerritoryAssistant */,
+				CDCEBBD61CBED60600CABB6B /* TerritoryAssistantTests */,
+				CDCEBBE11CBED60600CABB6B /* TerritoryAssistantUITests */,
+				CDCEBBBB1CBED60600CABB6B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CDCEBBBB1CBED60600CABB6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDCEBBBA1CBED60600CABB6B /* TerritoryAssistant.app */,
+				CDCEBBD31CBED60600CABB6B /* TerritoryAssistantTests.xctest */,
+				CDCEBBDE1CBED60600CABB6B /* TerritoryAssistantUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDCEBBBC1CBED60600CABB6B /* TerritoryAssistant */ = {
+			isa = PBXGroup;
+			children = (
+				CDCEBBC01CBED60600CABB6B /* AppDelegate.h */,
+				CDCEBBC11CBED60600CABB6B /* AppDelegate.m */,
+				CDCEBBC31CBED60600CABB6B /* ViewController.h */,
+				CDCEBBC41CBED60600CABB6B /* ViewController.m */,
+				CDCEBBC61CBED60600CABB6B /* Main.storyboard */,
+				CDCEBBC91CBED60600CABB6B /* Assets.xcassets */,
+				CDCEBBCB1CBED60600CABB6B /* LaunchScreen.storyboard */,
+				CDCEBBCE1CBED60600CABB6B /* Info.plist */,
+				CDCEBBBD1CBED60600CABB6B /* Supporting Files */,
+			);
+			path = TerritoryAssistant;
+			sourceTree = "<group>";
+		};
+		CDCEBBBD1CBED60600CABB6B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDCEBBBE1CBED60600CABB6B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CDCEBBD61CBED60600CABB6B /* TerritoryAssistantTests */ = {
+			isa = PBXGroup;
+			children = (
+				CDCEBBD71CBED60600CABB6B /* TerritoryAssistantTests.m */,
+				CDCEBBD91CBED60600CABB6B /* Info.plist */,
+			);
+			path = TerritoryAssistantTests;
+			sourceTree = "<group>";
+		};
+		CDCEBBE11CBED60600CABB6B /* TerritoryAssistantUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CDCEBBE21CBED60600CABB6B /* TerritoryAssistantUITests.m */,
+				CDCEBBE41CBED60600CABB6B /* Info.plist */,
+			);
+			path = TerritoryAssistantUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDCEBBB91CBED60600CABB6B /* TerritoryAssistant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDCEBBE71CBED60600CABB6B /* Build configuration list for PBXNativeTarget "TerritoryAssistant" */;
+			buildPhases = (
+				CDCEBBB61CBED60600CABB6B /* Sources */,
+				CDCEBBB71CBED60600CABB6B /* Frameworks */,
+				CDCEBBB81CBED60600CABB6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TerritoryAssistant;
+			productName = TerritoryAssistant;
+			productReference = CDCEBBBA1CBED60600CABB6B /* TerritoryAssistant.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CDCEBBD21CBED60600CABB6B /* TerritoryAssistantTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDCEBBEA1CBED60600CABB6B /* Build configuration list for PBXNativeTarget "TerritoryAssistantTests" */;
+			buildPhases = (
+				CDCEBBCF1CBED60600CABB6B /* Sources */,
+				CDCEBBD01CBED60600CABB6B /* Frameworks */,
+				CDCEBBD11CBED60600CABB6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDCEBBD51CBED60600CABB6B /* PBXTargetDependency */,
+			);
+			name = TerritoryAssistantTests;
+			productName = TerritoryAssistantTests;
+			productReference = CDCEBBD31CBED60600CABB6B /* TerritoryAssistantTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CDCEBBDD1CBED60600CABB6B /* TerritoryAssistantUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDCEBBED1CBED60600CABB6B /* Build configuration list for PBXNativeTarget "TerritoryAssistantUITests" */;
+			buildPhases = (
+				CDCEBBDA1CBED60600CABB6B /* Sources */,
+				CDCEBBDB1CBED60600CABB6B /* Frameworks */,
+				CDCEBBDC1CBED60600CABB6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDCEBBE01CBED60600CABB6B /* PBXTargetDependency */,
+			);
+			name = TerritoryAssistantUITests;
+			productName = TerritoryAssistantUITests;
+			productReference = CDCEBBDE1CBED60600CABB6B /* TerritoryAssistantUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDCEBBB21CBED60600CABB6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Enrique Mitchell";
+				TargetAttributes = {
+					CDCEBBB91CBED60600CABB6B = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					CDCEBBD21CBED60600CABB6B = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = CDCEBBB91CBED60600CABB6B;
+					};
+					CDCEBBDD1CBED60600CABB6B = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = CDCEBBB91CBED60600CABB6B;
+					};
+				};
+			};
+			buildConfigurationList = CDCEBBB51CBED60600CABB6B /* Build configuration list for PBXProject "TerritoryAssistant" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CDCEBBB11CBED60600CABB6B;
+			productRefGroup = CDCEBBBB1CBED60600CABB6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDCEBBB91CBED60600CABB6B /* TerritoryAssistant */,
+				CDCEBBD21CBED60600CABB6B /* TerritoryAssistantTests */,
+				CDCEBBDD1CBED60600CABB6B /* TerritoryAssistantUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDCEBBB81CBED60600CABB6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDCEBBCD1CBED60600CABB6B /* LaunchScreen.storyboard in Resources */,
+				CDCEBBCA1CBED60600CABB6B /* Assets.xcassets in Resources */,
+				CDCEBBC81CBED60600CABB6B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDCEBBD11CBED60600CABB6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDCEBBDC1CBED60600CABB6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDCEBBB61CBED60600CABB6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDCEBBC51CBED60600CABB6B /* ViewController.m in Sources */,
+				CDCEBBC21CBED60600CABB6B /* AppDelegate.m in Sources */,
+				CDCEBBBF1CBED60600CABB6B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDCEBBCF1CBED60600CABB6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDCEBBD81CBED60600CABB6B /* TerritoryAssistantTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDCEBBDA1CBED60600CABB6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDCEBBE31CBED60600CABB6B /* TerritoryAssistantUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CDCEBBD51CBED60600CABB6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDCEBBB91CBED60600CABB6B /* TerritoryAssistant */;
+			targetProxy = CDCEBBD41CBED60600CABB6B /* PBXContainerItemProxy */;
+		};
+		CDCEBBE01CBED60600CABB6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDCEBBB91CBED60600CABB6B /* TerritoryAssistant */;
+			targetProxy = CDCEBBDF1CBED60600CABB6B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CDCEBBC61CBED60600CABB6B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDCEBBC71CBED60600CABB6B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CDCEBBCB1CBED60600CABB6B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDCEBBCC1CBED60600CABB6B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CDCEBBE51CBED60600CABB6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CDCEBBE61CBED60600CABB6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDCEBBE81CBED60600CABB6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TerritoryAssistant/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Enrique-Mitchell.TerritoryAssistant";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CDCEBBE91CBED60600CABB6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TerritoryAssistant/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Enrique-Mitchell.TerritoryAssistant";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CDCEBBEB1CBED60600CABB6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TerritoryAssistantTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Enrique-Mitchell.TerritoryAssistantTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TerritoryAssistant.app/TerritoryAssistant";
+			};
+			name = Debug;
+		};
+		CDCEBBEC1CBED60600CABB6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TerritoryAssistantTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Enrique-Mitchell.TerritoryAssistantTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TerritoryAssistant.app/TerritoryAssistant";
+			};
+			name = Release;
+		};
+		CDCEBBEE1CBED60600CABB6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TerritoryAssistantUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Enrique-Mitchell.TerritoryAssistantUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TerritoryAssistant;
+			};
+			name = Debug;
+		};
+		CDCEBBEF1CBED60600CABB6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TerritoryAssistantUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Enrique-Mitchell.TerritoryAssistantUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TerritoryAssistant;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDCEBBB51CBED60600CABB6B /* Build configuration list for PBXProject "TerritoryAssistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDCEBBE51CBED60600CABB6B /* Debug */,
+				CDCEBBE61CBED60600CABB6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDCEBBE71CBED60600CABB6B /* Build configuration list for PBXNativeTarget "TerritoryAssistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDCEBBE81CBED60600CABB6B /* Debug */,
+				CDCEBBE91CBED60600CABB6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CDCEBBEA1CBED60600CABB6B /* Build configuration list for PBXNativeTarget "TerritoryAssistantTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDCEBBEB1CBED60600CABB6B /* Debug */,
+				CDCEBBEC1CBED60600CABB6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CDCEBBED1CBED60600CABB6B /* Build configuration list for PBXNativeTarget "TerritoryAssistantUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDCEBBEE1CBED60600CABB6B /* Debug */,
+				CDCEBBEF1CBED60600CABB6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDCEBBB21CBED60600CABB6B /* Project object */;
+}
