@@ -37,13 +37,11 @@
 
 - (IBAction)assignRequest:(id)sender {
     if ([[self.button titleForState:UIControlStateNormal] isEqualToString:@"Request Territory"]) {
-        
         if ([MFMailComposeViewController canSendMail]) {
-            NSLog(@"Can send email");
             MFMailComposeViewController *mail = [[MFMailComposeViewController alloc] init];
             mail.mailComposeDelegate = self;
             [mail setSubject:@"Return Territory"];
-            [mail setMessageBody:@"Please return your territory card at the nearest possible time" isHTML:NO];
+            [mail setMessageBody:@"Please return your territory card at the nearest possible time." isHTML:NO];
             [mail setToRecipients:@[self.emailAddress.text]];
             
             [self presentViewController:mail animated:YES completion:NULL];
@@ -59,16 +57,15 @@
             if (!error) {
                 PFObject *user = [objects objectAtIndex:0];
                 // Pop Up with input
-                NSLog(@"About to make the pop up");
-                UIAlertController *controller = [UIAlertController alertControllerWithTitle:@"New Territory Assignment" message:@"Please enter the new territory number"preferredStyle:UIAlertControllerStyleAlert];
+                UIAlertController *controller = [UIAlertController alertControllerWithTitle:@"New Territory Assignment" message:@"Please enter the new territory number."preferredStyle:UIAlertControllerStyleAlert];
                 
                 [controller addTextFieldWithConfigurationHandler:^(UITextField *text) {
                 }];
                 
+                UIAlertAction * cancel = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil];
+                
                 UIAlertAction * defaultAction = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-                    NSLog(@"Action handler");
                     NSString *input = [[[controller textFields] objectAtIndex:0] text];
-                    NSLog(@"%@", input);
                     NSNumber *newTerr = [[NSNumber alloc] initWithInt:[input intValue]];
                     [user setValue:newTerr forKey:@"Territory"];
                     [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
@@ -76,8 +73,21 @@
                             NSLog(@"Succeeded in updating the territory number");
                         }
                     }];
+                    
+                    PFQuery *terrQ = [PFQuery queryWithClassName:@"Territory"];
+                    [terrQ whereKey:@"Number" equalTo:input];
+                    [terrQ getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
+                        if (!error) {
+                            [object setValue:[user valueForKey:@"Name"] forKey:@"User"];
+                            // Needs to be synchronous
+                            [object saveInBackground];
+                        } else {
+                            NSLog(@"%@", [error localizedDescription]);
+                        }
+                    }];
                 }];
                 [controller addAction:defaultAction];
+                [controller addAction:cancel];
                 [self presentViewController:controller animated:YES completion:nil];
                 
             } else {
@@ -89,9 +99,6 @@
 
 - (void)mailComposeController:(MFMailComposeViewController *)controller
           didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error {
-    // Check the result or perform other tasks.
-    
-    // Dismiss the mail compose view controller.
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

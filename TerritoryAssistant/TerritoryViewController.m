@@ -20,21 +20,12 @@
 @implementation TerritoryViewController
 
 - (void) viewDidLoad {
-    NSLog(@"Did Load called");
     self.location = [[CLLocationManager alloc]init];
     [self.location requestAlwaysAuthorization];
     self.location.delegate = self;
     self.map.delegate = self;
     
     CLLocationCoordinate2D points[5];
-    NSLog([self.pt0 stringValue]);
-    NSLog([self.pt1 stringValue]);
-    NSLog([self.pt2 stringValue]);
-    NSLog([self.pt3 stringValue]);
-    NSLog([self.pt00 stringValue]);
-    NSLog([self.pt01 stringValue]);
-    NSLog([self.pt02 stringValue]);
-    NSLog([self.pt03 stringValue]);
     
     points[0] = CLLocationCoordinate2DMake([self.pt0 doubleValue], [self.pt00 doubleValue]);
     points[1] = CLLocationCoordinate2DMake([self.pt1 doubleValue], [self.pt01 doubleValue]);
@@ -42,14 +33,10 @@
     points[3] = CLLocationCoordinate2DMake([self.pt3 doubleValue], [self.pt03 doubleValue]);
     points[4] = CLLocationCoordinate2DMake([self.pt0 doubleValue], [self.pt00 doubleValue]);
     
-    NSLog(@"About to make polygon");
-    
     MKPolygon *polygon = [MKPolygon polygonWithCoordinates:points count:4];
     [self.map addOverlay: polygon];
     [self.map setRegion:MKCoordinateRegionForMapRect([polygon boundingMapRect])
                animated:YES];
-    NSLog(@"End of did lead");
-    
     self.territoryNumber.text = self.num;
     self.territoryNotes.text = self.notes;
 }

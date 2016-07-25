@@ -26,8 +26,26 @@
 @implementation NewTerritoryViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self
+                                                                          action:@selector(dismissKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
 }
+
+- (void)dismissKeyboard {
+    [self.pt0 resignFirstResponder];
+    [self.pt1 resignFirstResponder];
+    [self.pt2 resignFirstResponder];
+    [self.pt3 resignFirstResponder];
+    [self.pt01 resignFirstResponder];
+    [self.pt02 resignFirstResponder];
+    [self.pt03 resignFirstResponder];
+    [self.pt00 resignFirstResponder];
+    [self.notes resignFirstResponder];
+    [self.number resignFirstResponder];
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

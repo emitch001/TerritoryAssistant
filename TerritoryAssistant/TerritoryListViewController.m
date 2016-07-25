@@ -29,7 +29,6 @@
     self.title = @"Territories";
 }
 
-
 - (void) viewWillAppear:(BOOL)animated {
     PFQuery *query = [PFQuery queryWithClassName:@"Territory"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
@@ -40,7 +39,6 @@
     }];
 }
 
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.territoryarray.count;
 }
@@ -50,18 +48,13 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
-    
     PFObject *territory = self.territoryarray[indexPath.row];
-    
     NSString *territoryNumber = [territory valueForKey:@"Number"];
-    
-    NSLog(@"Territory number: %@", territoryNumber);
     UILabel *label = (UILabel *) [cell viewWithTag:1];
     label.text = territoryNumber;
     
     UILabel *label2 = (UILabel *) [cell viewWithTag:2];
     label2.text = [territory valueForKey:@"User"];
-    NSLog(@"User name: %@", label2.text);
     
     return cell;
 }
@@ -73,14 +66,13 @@
 }
 
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.description isEqualToString:@"territory"]) {
-        NSLog(@"Prepare Called");
+    if ([segue.identifier isEqualToString:@"territory"]) {
         TerritoryViewController *tvc = segue.destinationViewController;
         tvc.pt0 = [self.selectedTerr valueForKey:@"Lat0"];
         tvc.pt1 = [self.selectedTerr valueForKey:@"Lat1"];
         tvc.pt2 = [self.selectedTerr valueForKey:@"Lat2"];
         tvc.pt3 = [self.selectedTerr valueForKey:@"Lat3"];
-        
+
         tvc.pt00 = [self.selectedTerr valueForKey:@"Long0"];
         tvc.pt01 = [self.selectedTerr valueForKey:@"Long1"];
         tvc.pt02 = [self.selectedTerr valueForKey:@"Long2"];
@@ -88,7 +80,6 @@
         
         tvc.notes = [self.selectedTerr valueForKey:@"Notes"];
         tvc.num = [self.selectedTerr valueForKey:@"Number"];
-        NSLog(@"Prepare Ended");
     }
 }
 

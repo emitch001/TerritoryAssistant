@@ -28,8 +28,6 @@
     self.membertableview.delegate = self;
     self.membertableview.dataSource = self;
     self.title = @"Members";
-    
-    
 }
 
 - (void) viewWillAppear:(BOOL)animated {
@@ -63,7 +61,6 @@
         terrLabel.text = terrNumber;
     }
     
-    
     return cell;
 }
 
@@ -76,10 +73,12 @@
 }
 
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    ProfileViewController *contr = segue.destinationViewController;
-    contr.memberName = self.selectedName;
-    contr.email = self.selectedEmail;
-    contr.terrNumber = self.selectedTerritory;
+    if ([segue.identifier isEqualToString:@"memberProfile"]) {
+        ProfileViewController *contr = segue.destinationViewController;
+        contr.memberName = self.selectedName;
+        contr.email = self.selectedEmail;
+        contr.terrNumber = self.selectedTerritory;
+    }
 }
 
 

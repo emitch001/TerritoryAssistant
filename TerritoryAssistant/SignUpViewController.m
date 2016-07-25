@@ -22,6 +22,21 @@
 
 @implementation SignUpViewController
 
+-(void) viewDidLoad {
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self
+                                                                          action:@selector(dismissKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
+    self.password.secureTextEntry = YES;
+}
+
+- (void)dismissKeyboard {
+    [self.password resignFirstResponder];
+    [self.name resignFirstResponder];
+    [self.username resignFirstResponder];
+    [self.emailAddress resignFirstResponder];
+}
+
 - (IBAction)signUpButtonPressed:(id)sender {
     NSString *username = self.username.text;
     NSString * email = self.emailAddress.text;
@@ -39,22 +54,18 @@
     [myUser setValue:name forKey:@"Name"];
     NSNumber *initValue = [[NSNumber alloc] initWithInt:-1];
     [myUser setObject: initValue forKey:@"Territory"];
-    [myUser setValue:@"Manager" forKey:@"Type"];
-
-    PFObject *obj = [PFObject objectWithClassName:@"Members"];
-    obj[@"username"] = self.username.text;
-    obj[@"email"] = self.emailAddress.text;
-    obj[@"Name"] = name;
-    obj[@"Territory"] = initValue;
-    [obj saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
-        if (error) {
-            NSLog(@"Error");
-        }
-    }];
-
-    
     [myUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
         if (succeeded) {
+            PFObject *obj = [PFObject objectWithClassName:@"Members"];
+            obj[@"username"] = self.username.text;
+            obj[@"email"] = self.emailAddress.text;
+            obj[@"Name"] = name;
+            obj[@"Territory"] = initValue;
+            [obj saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+                if (error) {
+                    NSLog(@"Error");
+                }
+            }];
             [self dismissViewControllerAnimated:YES completion:nil];
         } else {
             UIAlertController *controller = [UIAlertController alertControllerWithTitle:@"Error" message:[error localizedDescription] preferredStyle:UIAlertControllerStyleAlert];
