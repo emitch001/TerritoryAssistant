@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74CE276B407C5B7A57AC3647 /* libPods-TerritoryAssistantTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EE5F6A2D793B18C8400CFAF /* libPods-TerritoryAssistantTests.a */; };
+		7EFE04C09C30C2E199C0094B /* libPods-TerritoryAssistant.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F255397AAFC6947E23175CAA /* libPods-TerritoryAssistant.a */; };
 		CD47A03C1CD2450E00252DAB /* MemberListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD47A03B1CD2450E00252DAB /* MemberListViewController.m */; };
 		CD4C07281CD5643C00D95472 /* NewTerritoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4C07271CD5643C00D95472 /* NewTerritoryViewController.m */; };
 		CD9D98421CD18DBF002ACD21 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9D983C1CD18DBF002ACD21 /* Bolts.framework */; };
 		CD9D98431CD18DBF002ACD21 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9D983D1CD18DBF002ACD21 /* Parse.framework */; };
-		CD9D98441CD18DBF002ACD21 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9D983E1CD18DBF002ACD21 /* ParseFacebookUtils.framework */; };
-		CD9D98451CD18DBF002ACD21 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9D983F1CD18DBF002ACD21 /* ParseFacebookUtilsV4.framework */; };
 		CD9D98461CD18DBF002ACD21 /* ParseTwitterUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9D98401CD18DBF002ACD21 /* ParseTwitterUtils.framework */; };
 		CD9D98471CD18DBF002ACD21 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9D98411CD18DBF002ACD21 /* ParseUI.framework */; };
 		CD9D98491CD18E00002ACD21 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9D98481CD18E00002ACD21 /* AudioToolbox.framework */; };
@@ -23,8 +23,6 @@
 		CD9D98531CD18E25002ACD21 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9D98521CD18E25002ACD21 /* Security.framework */; };
 		CD9D98551CD18E2B002ACD21 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9D98541CD18E2B002ACD21 /* StoreKit.framework */; };
 		CD9D98571CD18E31002ACD21 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9D98561CD18E31002ACD21 /* SystemConfiguration.framework */; };
-		CD9D98591CD18E3A002ACD21 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9D98581CD18E3A002ACD21 /* libz.tbd */; };
-		CD9D985B1CD18E45002ACD21 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9D985A1CD18E45002ACD21 /* libsqlite3.tbd */; };
 		CDCEBBBF1CBED60600CABB6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCEBBBE1CBED60600CABB6B /* main.m */; };
 		CDCEBBC21CBED60600CABB6B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCEBBC11CBED60600CABB6B /* AppDelegate.m */; };
 		CDCEBBC51CBED60600CABB6B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCEBBC41CBED60600CABB6B /* ViewController.m */; };
@@ -38,6 +36,10 @@
 		CDCEBBF81CBED6A300CABB6B /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCEBBF71CBED6A300CABB6B /* SignUpViewController.m */; };
 		CDCEBBFB1CBED90C00CABB6B /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCEBBFA1CBED90C00CABB6B /* ProfileViewController.m */; };
 		CDCEBBFE1CBEDB4500CABB6B /* TerritoryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCEBBFD1CBEDB4500CABB6B /* TerritoryListViewController.m */; };
+		CDDACA871F2BF90800C8033B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDDACA861F2BF90800C8033B /* GoogleService-Info.plist */; };
+		CDEF046E1F2BFF7F001EA3E3 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEF046D1F2BFF7F001EA3E3 /* Accounts.framework */; };
+		CDEF04701F2BFF8E001EA3E3 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEF046F1F2BFF8E001EA3E3 /* Social.framework */; };
+		CE879A03B702ECB277FA23DF /* libPods-TerritoryAssistantUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ADBCD628C9D8CB22E746D8C /* libPods-TerritoryAssistantUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0ADBCD628C9D8CB22E746D8C /* libPods-TerritoryAssistantUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TerritoryAssistantUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EE5F6A2D793B18C8400CFAF /* libPods-TerritoryAssistantTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TerritoryAssistantTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E210BC115AD04571DCB5B9F /* Pods-TerritoryAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TerritoryAssistant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TerritoryAssistant/Pods-TerritoryAssistant.debug.xcconfig"; sourceTree = "<group>"; };
+		798C1CADAEE2EA1D5DA97385 /* Pods-TerritoryAssistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TerritoryAssistant.release.xcconfig"; path = "Pods/Target Support Files/Pods-TerritoryAssistant/Pods-TerritoryAssistant.release.xcconfig"; sourceTree = "<group>"; };
+		7B02B7A87F027A9BB1467C96 /* Pods-TerritoryAssistantUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TerritoryAssistantUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TerritoryAssistantUITests/Pods-TerritoryAssistantUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B8F8B74B1EA3E758A4512176 /* Pods-TerritoryAssistantTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TerritoryAssistantTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TerritoryAssistantTests/Pods-TerritoryAssistantTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CD47A03A1CD2450E00252DAB /* MemberListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MemberListViewController.h; path = ../MemberListViewController.h; sourceTree = "<group>"; };
 		CD47A03B1CD2450E00252DAB /* MemberListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MemberListViewController.m; path = ../MemberListViewController.m; sourceTree = "<group>"; };
 		CD4C07261CD5643C00D95472 /* NewTerritoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewTerritoryViewController.h; sourceTree = "<group>"; };
@@ -104,6 +112,12 @@
 		CDCEBBFA1CBED90C00CABB6B /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		CDCEBBFC1CBEDB4500CABB6B /* TerritoryListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TerritoryListViewController.h; sourceTree = "<group>"; };
 		CDCEBBFD1CBEDB4500CABB6B /* TerritoryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TerritoryListViewController.m; sourceTree = "<group>"; };
+		CDDACA861F2BF90800C8033B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CDEF046D1F2BFF7F001EA3E3 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		CDEF046F1F2BFF8E001EA3E3 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		F255397AAFC6947E23175CAA /* libPods-TerritoryAssistant.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TerritoryAssistant.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2F45C511197E819DCE2A16A /* Pods-TerritoryAssistantUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TerritoryAssistantUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TerritoryAssistantUITests/Pods-TerritoryAssistantUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FC77FBBDA6A3E6FFDDBC80C1 /* Pods-TerritoryAssistantTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TerritoryAssistantTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TerritoryAssistantTests/Pods-TerritoryAssistantTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +125,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD9D985B1CD18E45002ACD21 /* libsqlite3.tbd in Frameworks */,
-				CD9D98591CD18E3A002ACD21 /* libz.tbd in Frameworks */,
+				CDEF04701F2BFF8E001EA3E3 /* Social.framework in Frameworks */,
+				CDEF046E1F2BFF7F001EA3E3 /* Accounts.framework in Frameworks */,
 				CD9D98571CD18E31002ACD21 /* SystemConfiguration.framework in Frameworks */,
 				CD9D98551CD18E2B002ACD21 /* StoreKit.framework in Frameworks */,
 				CD9D98531CD18E25002ACD21 /* Security.framework in Frameworks */,
@@ -124,9 +138,8 @@
 				CD9D98471CD18DBF002ACD21 /* ParseUI.framework in Frameworks */,
 				CD9D98431CD18DBF002ACD21 /* Parse.framework in Frameworks */,
 				CD9D98421CD18DBF002ACD21 /* Bolts.framework in Frameworks */,
-				CD9D98451CD18DBF002ACD21 /* ParseFacebookUtilsV4.framework in Frameworks */,
-				CD9D98441CD18DBF002ACD21 /* ParseFacebookUtils.framework in Frameworks */,
 				CD9D98461CD18DBF002ACD21 /* ParseTwitterUtils.framework in Frameworks */,
+				7EFE04C09C30C2E199C0094B /* libPods-TerritoryAssistant.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74CE276B407C5B7A57AC3647 /* libPods-TerritoryAssistantTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,15 +155,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE879A03B702ECB277FA23DF /* libPods-TerritoryAssistantUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		89CC6820B61591B02DCB9298 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E210BC115AD04571DCB5B9F /* Pods-TerritoryAssistant.debug.xcconfig */,
+				798C1CADAEE2EA1D5DA97385 /* Pods-TerritoryAssistant.release.xcconfig */,
+				B8F8B74B1EA3E758A4512176 /* Pods-TerritoryAssistantTests.debug.xcconfig */,
+				FC77FBBDA6A3E6FFDDBC80C1 /* Pods-TerritoryAssistantTests.release.xcconfig */,
+				7B02B7A87F027A9BB1467C96 /* Pods-TerritoryAssistantUITests.debug.xcconfig */,
+				F2F45C511197E819DCE2A16A /* Pods-TerritoryAssistantUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CD9D985C1CD18E56002ACD21 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CDEF046F1F2BFF8E001EA3E3 /* Social.framework */,
+				CDEF046D1F2BFF7F001EA3E3 /* Accounts.framework */,
 				CD9D985A1CD18E45002ACD21 /* libsqlite3.tbd */,
 				CD9D98581CD18E3A002ACD21 /* libz.tbd */,
 				CD9D98561CD18E31002ACD21 /* SystemConfiguration.framework */,
@@ -166,6 +196,9 @@
 				CD9D983F1CD18DBF002ACD21 /* ParseFacebookUtilsV4.framework */,
 				CD9D98401CD18DBF002ACD21 /* ParseTwitterUtils.framework */,
 				CD9D98411CD18DBF002ACD21 /* ParseUI.framework */,
+				F255397AAFC6947E23175CAA /* libPods-TerritoryAssistant.a */,
+				0EE5F6A2D793B18C8400CFAF /* libPods-TerritoryAssistantTests.a */,
+				0ADBCD628C9D8CB22E746D8C /* libPods-TerritoryAssistantUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -178,6 +211,7 @@
 				CDCEBBE11CBED60600CABB6B /* TerritoryAssistantUITests */,
 				CDCEBBBB1CBED60600CABB6B /* Products */,
 				CD9D985C1CD18E56002ACD21 /* Frameworks */,
+				89CC6820B61591B02DCB9298 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -194,6 +228,7 @@
 		CDCEBBBC1CBED60600CABB6B /* TerritoryAssistant */ = {
 			isa = PBXGroup;
 			children = (
+				CDDACA861F2BF90800C8033B /* GoogleService-Info.plist */,
 				CDCEBBBE1CBED60600CABB6B /* main.m */,
 				CDCEBBC01CBED60600CABB6B /* AppDelegate.h */,
 				CDCEBBC11CBED60600CABB6B /* AppDelegate.m */,
@@ -254,9 +289,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDCEBBE71CBED60600CABB6B /* Build configuration list for PBXNativeTarget "TerritoryAssistant" */;
 			buildPhases = (
+				D887D3DBAAAC00B8D21A20E0 /* [CP] Check Pods Manifest.lock */,
 				CDCEBBB61CBED60600CABB6B /* Sources */,
 				CDCEBBB71CBED60600CABB6B /* Frameworks */,
 				CDCEBBB81CBED60600CABB6B /* Resources */,
+				C3554CB3982AE680C3A3C6EB /* [CP] Embed Pods Frameworks */,
+				9C0A9DA8C1BCE2999C305E30 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -271,9 +309,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDCEBBEA1CBED60600CABB6B /* Build configuration list for PBXNativeTarget "TerritoryAssistantTests" */;
 			buildPhases = (
+				3806FD8305C0961D1870A182 /* [CP] Check Pods Manifest.lock */,
 				CDCEBBCF1CBED60600CABB6B /* Sources */,
 				CDCEBBD01CBED60600CABB6B /* Frameworks */,
 				CDCEBBD11CBED60600CABB6B /* Resources */,
+				AAC961B73BC51A15BEDA9F55 /* [CP] Embed Pods Frameworks */,
+				7E590E2745D7764E51F698AB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -289,9 +330,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDCEBBED1CBED60600CABB6B /* Build configuration list for PBXNativeTarget "TerritoryAssistantUITests" */;
 			buildPhases = (
+				16D2F407D6E9C783A1B803C9 /* [CP] Check Pods Manifest.lock */,
 				CDCEBBDA1CBED60600CABB6B /* Sources */,
 				CDCEBBDB1CBED60600CABB6B /* Frameworks */,
 				CDCEBBDC1CBED60600CABB6B /* Resources */,
+				05640C098E8E2F4E6892D9F8 /* [CP] Embed Pods Frameworks */,
+				4A3AA02E27DCA78A98EC75AD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -309,7 +353,7 @@
 		CDCEBBB21CBED60600CABB6B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Enrique Mitchell";
 				TargetAttributes = {
 					CDCEBBB91CBED60600CABB6B = {
@@ -352,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDCEBBCD1CBED60600CABB6B /* LaunchScreen.storyboard in Resources */,
+				CDDACA871F2BF90800C8033B /* GoogleService-Info.plist in Resources */,
 				CDCEBBCA1CBED60600CABB6B /* Assets.xcassets in Resources */,
 				CDCEBBC81CBED60600CABB6B /* Main.storyboard in Resources */,
 			);
@@ -372,6 +417,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05640C098E8E2F4E6892D9F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TerritoryAssistantUITests/Pods-TerritoryAssistantUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		16D2F407D6E9C783A1B803C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3806FD8305C0961D1870A182 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4A3AA02E27DCA78A98EC75AD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TerritoryAssistantUITests/Pods-TerritoryAssistantUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E590E2745D7764E51F698AB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TerritoryAssistantTests/Pods-TerritoryAssistantTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C0A9DA8C1BCE2999C305E30 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TerritoryAssistant/Pods-TerritoryAssistant-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAC961B73BC51A15BEDA9F55 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TerritoryAssistantTests/Pods-TerritoryAssistantTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3554CB3982AE680C3A3C6EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TerritoryAssistant/Pods-TerritoryAssistant-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D887D3DBAAAC00B8D21A20E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CDCEBBB61CBED60600CABB6B /* Sources */ = {
@@ -456,8 +639,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -500,8 +685,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -526,16 +713,20 @@
 		};
 		CDCEBBE81CBED60600CABB6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E210BC115AD04571DCB5B9F /* Pods-TerritoryAssistant.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = Q38DNNQ638;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TerritoryAssistant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "Enrique-Mitchell.TerritoryAssistant";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -544,16 +735,20 @@
 		};
 		CDCEBBE91CBED60600CABB6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 798C1CADAEE2EA1D5DA97385 /* Pods-TerritoryAssistant.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = Q38DNNQ638;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TerritoryAssistant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "Enrique-Mitchell.TerritoryAssistant";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -562,6 +757,7 @@
 		};
 		CDCEBBEB1CBED60600CABB6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8F8B74B1EA3E758A4512176 /* Pods-TerritoryAssistantTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = TerritoryAssistantTests/Info.plist;
@@ -574,6 +770,7 @@
 		};
 		CDCEBBEC1CBED60600CABB6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC77FBBDA6A3E6FFDDBC80C1 /* Pods-TerritoryAssistantTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = TerritoryAssistantTests/Info.plist;
@@ -586,6 +783,7 @@
 		};
 		CDCEBBEE1CBED60600CABB6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B02B7A87F027A9BB1467C96 /* Pods-TerritoryAssistantUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = TerritoryAssistantUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -597,6 +795,7 @@
 		};
 		CDCEBBEF1CBED60600CABB6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2F45C511197E819DCE2A16A /* Pods-TerritoryAssistantUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = TerritoryAssistantUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

@@ -28,7 +28,7 @@
 - (IBAction)logIn:(id)sender {
     NSString *nameInfo = self.username.text;
     NSString * pass = self.password.text;
-    [PFUser logInWithUsernameInBackground:nameInfo password:pass block:^(PFUser * _Nullable user, NSError * _Nullable error) {
+    /*[PFUser logInWithUsernameInBackground:nameInfo password:pass block:^(PFUser * _Nullable user, NSError * _Nullable error) {
         if (user != nil) {
             if ([[user valueForKey:@"Type"] isEqualToString:@"Manager"]) {
                 [self performSegueWithIdentifier:@"Manager" sender:self];
@@ -60,7 +60,13 @@
             [controller addAction:defaultAction];
             [self presentViewController:controller animated:YES completion:nil];
         }
-    }];
+    }];*/
+    
+    if ( [nameInfo isEqualToString:@"test"] && [ pass isEqualToString:@"test"]) {
+        [self performSegueWithIdentifier:@"Manager" sender:self];
+    } else if ( [nameInfo isEqualToString:@"user"] && [ pass isEqualToString:@"user"]) {
+        [self performSegueWithIdentifier:@"User" sender:self];
+    }
     
 }
 
@@ -69,20 +75,7 @@
 }
 
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"User"]) {
-        TerritoryViewController *tvc2 = segue.destinationViewController;
-        PFObject *obj = self.terr;
-        tvc2.pt0 = [obj valueForKey:@"Lat0"];
-        tvc2.pt1 = [obj valueForKey:@"Lat1"];
-        tvc2.pt2 = [obj valueForKey:@"Lat2"];
-        tvc2.pt3 = [obj valueForKey:@"Lat3"];
-        tvc2.pt00 = [obj valueForKey:@"Long0"];
-        tvc2.pt01 = [obj valueForKey:@"Long1"];
-        tvc2.pt02 = [obj valueForKey:@"Long2"];
-        tvc2.pt03 = [obj valueForKey:@"Long3"];
-        tvc2.notes = [obj valueForKey:@"Notes"];
-        tvc2.num = [obj valueForKey:@"Number"];
-    }
+
 }
 
 

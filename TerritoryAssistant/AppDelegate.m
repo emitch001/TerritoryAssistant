@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
+@import Firebase;
 
 @interface AppDelegate ()
 
@@ -22,6 +23,7 @@
         configuration.clientKey = @"qwerty";
         configuration.server = @"https://territoryassistant.herokuapp.com/parse";
     }]];
+    [FIRApp configure];
     return YES;
 }
 

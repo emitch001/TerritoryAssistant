@@ -27,16 +27,16 @@
     self.territorytableview.delegate = self;
     self.territorytableview.dataSource = self;
     self.title = @"Territories";
+    
 }
 
 - (void) viewWillAppear:(BOOL)animated {
-    PFQuery *query = [PFQuery queryWithClassName:@"Territory"];
-    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        if (!error) {
-            self.territoryarray = [objects mutableCopy];
-            [self.territorytableview reloadData];
-        }
-    }];
+    [self.territoryarray addObject: @"Territory 1"];
+ 
+    [self.territoryarray addObject: @"Territory 2"];
+ 
+    [self.territoryarray addObject: @"Territory 3"];
+
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -66,21 +66,7 @@
 }
 
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"territory"]) {
-        TerritoryViewController *tvc = segue.destinationViewController;
-        tvc.pt0 = [self.selectedTerr valueForKey:@"Lat0"];
-        tvc.pt1 = [self.selectedTerr valueForKey:@"Lat1"];
-        tvc.pt2 = [self.selectedTerr valueForKey:@"Lat2"];
-        tvc.pt3 = [self.selectedTerr valueForKey:@"Lat3"];
-
-        tvc.pt00 = [self.selectedTerr valueForKey:@"Long0"];
-        tvc.pt01 = [self.selectedTerr valueForKey:@"Long1"];
-        tvc.pt02 = [self.selectedTerr valueForKey:@"Long2"];
-        tvc.pt03 = [self.selectedTerr valueForKey:@"Long3"];
-        
-        tvc.notes = [self.selectedTerr valueForKey:@"Notes"];
-        tvc.num = [self.selectedTerr valueForKey:@"Number"];
-    }
+    
 }
 
 @end
